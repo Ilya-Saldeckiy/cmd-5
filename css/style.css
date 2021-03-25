@@ -1067,6 +1067,14 @@ li{
     .footer{
         margin-top: 90px;
     }
+
+    .img-radius{
+        border-radius: 0 0 40px 0;
+    }
+
+    .img-radius-left{
+        border-radius: 0 0 0 40px;
+    }
 }
 
 @media (max-width: 1023px){
@@ -1794,6 +1802,14 @@ li{
         margin-right: auto;
     }
 
+    .indagine__list{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .img-radius-left,.img-radius{
+        border-radius: 0 0 0 32px;
+    }
 }
 
 @media (max-width: 360px){
