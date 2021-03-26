@@ -124,6 +124,10 @@
     text-decoration: underline solid #00a9e0;
 }
 
+.city-picker__item-val:focus{
+    outline: none;
+}
+
 @media (max-width: 1023px){
     .popup{
         max-width: 100%;
