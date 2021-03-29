@@ -49,7 +49,7 @@ li{
 	list-style: none;
 }
 
-.container,.researches-position{
+.container,.researches-position,.section__conditions{
     position: relative;
     margin: 0 auto;
     width: 1232px;
@@ -349,11 +349,12 @@ li{
     background-color: #00a9e0;
     border-radius: 40px;
     padding-left: 81px;
-    padding-right: 81px;
-    padding-top: 19px;
-    padding-bottom: 17px;
+    padding-right: 82px;
+    padding-top: 17px;
+    padding-bottom: 14px;
     text-align: center; 
     transition: background-color .3s ease-in-out;
+    color: #ffffff;
 }
 
 .btn__record:hover{
@@ -656,7 +657,6 @@ li{
 .section__sale{
     padding-top: 100px;
     padding-bottom: 90px;
-    border-bottom: 1px solid #dddddd;
 }
 
 .sale__step-job{
@@ -674,23 +674,28 @@ li{
 }
 
 .step__number{
-    width: 88px;
-    height: 88px;
-    border: 2px solid #95e1f9;
-    border-radius: 100%;
-    text-align: center;
-    padding: 15px 34px;
-    font-size: 48px;
-    line-height: 1.2;
-    font-weight: 400;
-    color: #00a9e0;
-    margin-right: 0px;
     margin: 0 auto;
     margin-bottom: 34px;
+    width: 64px;
+    height: 64px;
+    padding: 15px 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    border: 1px solid #95e1f9;
+    border-radius: 100%;
+    color: #00a9e0;
 }
 
-.step-2,.step-3{
+.step-2, .step-3 {
     padding: 15px 29px;
+}
+
+.step-2, .step-3 {
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
 .step__text{
@@ -707,6 +712,7 @@ li{
 .section__conditions{
     padding-top: 107px;
     padding-bottom: 91px;
+    border-top: 1px solid #dddddd;
 }
 
 .conditions__caption{
@@ -909,9 +915,20 @@ li{
     margin-top: 90px;
 }
 
+.text__caption{
+    font-weight: 700;
+}
+
+.comportamento__list,.comportamento__list-2,.indagine__list{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #000000;
+}
+
 /* Адаптив */
 @media (max-width: 1279px){
-    .container,.conditions__container,.sale-container,.researches-position,.small__container,.small-container{
+    .container,.conditions__container,.sale-container,.researches-position,.small__container,.small-container,.section__conditions{
         width: 968px;
     }
 
@@ -954,7 +971,7 @@ li{
         line-height: 1.8;
         font-weight: 700;
         color: #ffffff;
-        margin-right: 24px;
+        margin-right: 0px;
     }
 
     .header-subtitle{
@@ -1078,7 +1095,7 @@ li{
 }
 
 @media (max-width: 1023px){
-    .container,.conditions__container,.sale-container,.researches-position,.small__container,.small-container{
+    .container,.conditions__container,.sale-container,.researches-position,.small__container,.small-container,.section__conditions{
         width: 736px;
     }
 
@@ -1236,7 +1253,7 @@ li{
         top: 6px;
     }
 
-    .container,.text-container,.sale-container,.researches-position,.small__container,.small-container{
+    .container,.text-container,.sale-container,.researches-position,.small__container,.small-container,.section__conditions{
         padding-left: 16px;
         padding-right: 16px;
         width: 100%;
@@ -1289,10 +1306,15 @@ li{
         padding-right: 33px;
     }
 
+    .small-container{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
 }
 
 @media (max-width: 767px){
-    .container,.conditions__container,.sale-container,.researches-position,.small__container,.small-container{
+    .container,.conditions__container,.sale-container,.researches-position,.small__container,.small-container,.section__conditions{
         padding-left: 16px;
         padding-right: 16px;
         width: 100%;
@@ -1352,7 +1374,7 @@ li{
     .header-phone-position{
         font-size: 11px;
         line-height: 1.2;
-        margin-right: 12px;
+        margin-right: 0px;
     }
     
     .menu-list-item{
@@ -1728,8 +1750,8 @@ li{
     .btn__record{
         padding-left: 43px;
         padding-right: 44px;
-        padding-top: 16px;
-        padding-bottom: 14px;
+        padding-top: 15px;
+        padding-bottom: 11px;
     }
 
     .indagine__link{
@@ -1757,13 +1779,21 @@ li{
     }
 
     .section__conditions{
-        padding-top: 54px;
+        padding-top: 0;
         padding-bottom: 51px;
+        padding-left: 16px;
+        border: none;
+    }
+
+    .conditions__caption{
+        padding-top: 54px;
+        border-top: 1px solid #dddddd;
     }
 
     .conditions__text{
         font-size: 16px;
         line-height: 24px;
+        text-align: left;
     }
 
     .conditions__text:not(:last-child){
@@ -1810,17 +1840,55 @@ li{
     .img-radius-left,.img-radius{
         border-radius: 0 0 0 32px;
     }
-}
 
-@media (max-width: 360px){
-    .header-caption{
-        width: 90%;
+    .header-section{
+        padding-bottom: 107%;
     }
 
+    .comportamento__list,.comportamento__list-2,.indagine__list{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #000000;
+    }
+
+    .comportamento__block-2 {
+        margin-right: 0;
+    }
+
+    .indagine__block {
+        padding-top: 24px;
+        padding-bottom: 27px;
+        padding-left: 24px;
+        padding-right: 33px;
+    }
+
+    .small-container{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .indagine__block:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .indagine__link{
+        font-size: 16px;
+    }
+
+    .indagine__link {
+        padding-left: 59px;
+        padding-right: 60px;
+        padding-top: 16px;
+        padding-bottom: 11px;
+    }
+}
+
+/* @media (max-width: 360px){
     .indagine__link{
         padding-left: 34px;
         padding-right: 34px;
         padding-top: 15px;
         padding-bottom: 13px;
     }
-}
+} */
